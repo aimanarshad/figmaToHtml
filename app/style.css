@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    top:0px;
+    left:0px;
+}
+
+.content{
+    width: 1440px;
+    margin: 0px auto;
+}
+.box1{
+    width: 1440px;
+    height: 1024px;
+    top: -537px;
+    left: -652px;
+    gap: 0px;
+    opacity: 0px;
+    background: rgb(228, 179, 179);
+
+}
+.nav{
+    background-color:#647DE3;
+    width: 1390px;
+    height: 61px;
+    top: 2px;
+    left: 2px;
+    gap: 0px;
+    opacity: 0px;
+    display:flex;
+    justify-content:space-between;
+
+
+}
+.logo{
+    width: 100px;
+    height: 70px;
+    top: 2px;
+    left: 5px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+
+}
+.logo span{
+    width: 103px;
+    height: 43px;
+    top: 11px;
+    left: 97px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 36.65px;
+    font-weight: 400;
+    line-height: 44.35px;
+    text-align: left;
+    color: white;
+
+
+}
+
+.nav-links{
+    top: 18px;
+    left: 621px;
+    width: 813px;
+    height: 29.28px;
+    display: flex;
+   justify-content: space-evenly;
+}
+.nav-links a{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.2px;
+    text-align: left;
+    color: #EEEA0A;
+    text-decoration: none;
+    list-style-type:none;
+    transition:all .5s ease-in-out;
+    
+
+}
+
+.blog Image{
+    width: 700px;
+    height: 400px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+.blog{
+    width: 700px;
+    height: 600px;
+    top: 133px;
+    left: 20px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid black;
+
+}
+ h3{
+    width: 650px;
+    height: 87px;
+    top: 399px;
+    left: 25px;
+    gap: 0px;
+    opacity: 1;
+    color: black;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    font-weight: bolder;
+    line-height: 28.8px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+
+}
+
+
+.nav-links li {
+    list-style-type: none; /* Apply to list item (li) */
+}
+
+#para{
+    width: 650px;
+    height: 108px;
+    top: 516px;
+    left: 25px;
+    gap: 0px;
+    opacity: 1;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+}
+/* .blog2{
+    width: Fixed (682px)px;
+    height: Fixed (606px)px;
+    top: 127px;
+    left: 742px;
+    padding: 6px 4px 6px 4px;
+   
+
+    justify-content: space-between;
+    opacity: 0px;
+    
+
+}
+
+.b1{
+    width: 677.12px;
+    height: 164.5px;
+    justify-content: space-between;
+    
+   
+}
+.b2{
+    width: 674.12px;
+    height: 164.5px;
+    gap: 0px;
+    border: 1px solid black;
+    opacity: 0px;
+    
+    
+   
+}
+.b3{
+    width: 677.12px;
+    height: 164.5px;
+   
+}
+.blog2 button{
+    width: 171.06px;
+    height: 53.06px;
+    top: 117px;
+    left: 255px;
+    gap: 0px;
+    border-radius: 25px 0px 0px 0px;
+    opacity: 0px;
+    background: #647DE3;
+    color:White
+
+
+}
+.blog-main{
+    display: flex;
+}
+
+.blog2 h4{
+    width: 426.12px;
+    height: 92.32px;
+    top: 6px;
+    left: 255px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.2px;
+    text-align: left;
+
+
+}
+.blog2 Image{
+    width: 235.59px;
+height: 164.5px;
+top: 6px;
+left: 4px;
+gap: 0px;
+opacity: 0px;
+
+} */
+
+.blog-main{
+    display: flex;
+}
+.b1, .b2, .b3 {
+    display: flex;
+    align-items: flex-start; /* Align items from the start (left) */
+    gap: 20px; /* Space between image and text content */
+    border: 1px solid black;
+    padding: 10px;
+    background-repeat: no-repeat;
+}
+
+.b1 h4, .b2 h4, .b3 h4 {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin: 0;
+    text-align: left;
+}
+
+.b1 .text-container, .b2 .text-container, .b3 .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.b1 button, .b2 button, .b3 button {
+    width: 171.06px;
+    height: 53.06px;
+    background-color: #647DE3;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px; /* Space above the button */
+}
+
