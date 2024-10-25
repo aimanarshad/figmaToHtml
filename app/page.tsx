@@ -1,9 +1,12 @@
+import Link from "next/link";
+import Image from "next/image";
 
-"use client"
+
+
 export default function Home(){
   return(
-    <>
-    
-    </>
+    <div>
+      <h1>home</h1>
+    </div>
   )
 }

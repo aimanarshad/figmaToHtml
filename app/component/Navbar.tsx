@@ -1,82 +1,184 @@
-import Link from "next/link";
 import Image from "next/image";
 import "../style.css";
 
-export default function NavBar() {
+export default function Home() {
   return (
-    <div className="box1">
-      <nav className="nav">
-        <div className="logo">
-          <Image src="/logo.png" alt="Logo" width={85} height={60} />
-          <span>GIAIC</span>
+    <>
+      <header className="header">
+        <div className="nav">
+          <ul>
+            <li>
+              <a href="#">Works</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div className="navs">
-        <ul className="nav-links">
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/">Latest</Link>
-          </li>
-          <li>
-            <Link href="/">Category</Link>
-          </li>
-          <li>
-            <Link href="/">About</Link>
-          </li>
-          <li>
-            <Link href="/">Contact</Link>
-          </li>
-          <li>
-            <Link href="/">Feedback</Link>
-          </li>
-        </ul>
+        <div className="header-content">
+          <div className="profile-header">
+            <h1>
+              Hi, I am John,
+              <br />
+              Creative Technologist
+            </h1>
+           <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            <br />
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            <br />
+            veniam consequat sunt nostrud amet.
+          </p>
+          <button className="cta-button">Download Resume</button> 
+          </div>
+          <div className="Image">
+              <Image
+              src="/profile-photo.png"
+              alt="John's Profile Picture"
+              width={292}
+              height={200}
+              className="profile-pic"
+            />
+            </div>
+            </div>
+
+      </header>
+
+      <section className="recent-posts">
+        <h2>Recent Post</h2>
+        <a href="#" className="view-all">
+          View all
+        </a>
+        <div className="posts-container">
+          <div className="post">
+            <h3>Making a design system from scratch</h3>
+            <p className="p1">12th Feb 2023 | Design, Figma</p>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+          <div className="post">
+            <h3>Making a design system from scratch</h3>
+            <p className="p1">12th Feb 2023 | Design, Figma</p>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              <br />
+              amet sint. Velit officia consequat duis enim velit mollit.
+              <br />
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
         </div>
-      </nav>
-      <div className="blog-main">
-      <div className="blog">
-        <Image src="/flag.png" alt="flag" width={700} height={400}/>
-        <h3>
-          Israeli foreign minister claims Hamas leader Yahya Sinwar killed in
-          Gaza operation
-          </h3>
-        <p className="para">
-          The audience on Wednesday was sent rolling in the aisles when the
-          murder-espionage dramedy "The 39 Steps" opened on the 21st day of the
-          ongoing World Culture Festival at the Arts Council of Pakistan (ACP)
-          in Karachi
-        </p>
-      </div>
-       <div className="blog2">
-       <div className="b1">
-    <Image src={"/prime.png"} alt="Prime" width={235.59} height={164.5}/>        
-    <div className="text-container">
-        <h4>Senate session, cabinet meeting set to begin as efforts underway to pass constitutional amendment</h4>
-        <button>Read More</button>
-    </div>
-</div>
+      </section>
 
-<div className="b2">
-    <Image src={"/cirketer.png"} alt="circketer" width={235.59} height={164.5}/>        
-    <div className="text-container">
-        <h4>World Culture Festival: Audience takes 'The 39 Steps' for laughs of their lives</h4>
-        <button>Read More</button>
-    </div>
-</div>
+      <section className="featured-works">
+        <h2>Featured Works</h2>
+        <div className="work-container">
+          <div className="work">
+            <Image
+              src="/work1.png"
+              alt="Designing Dashboards"
+              width={246}
+              height={184}
+            />
+            <div className="work-text">
+              <h3>Designing Dashboards</h3>
+              <button>2023</button>
+              <p>Dashboard</p>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                <br />
+                amet sint. Velit officia consequat duis enim velit mollit.
+                <br />
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+          <div className="work">
+            <Image
+              src="/work2.png"
+              alt="Designing Dashboards"
+              width={246}
+              height={184}
+            />
+            <div className="work-text">
+              <h3>Designing Dashboards</h3>
+              <button>2023</button>
+              <p>Dashboard</p>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                <br />
+                amet sint. Velit officia consequat duis enim velit mollit.
+                <br />
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+          <div className="work">
+            <Image
+              src="/work3.png"
+              alt="Designing Dashboards"
+              width={246}
+              height={184}
+            />
+            <div className="work-text">
+              <h3>Designing Dashboards</h3>
+              <button>2023</button>
+              <p>Dashboard</p>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                <br />
+                amet sint. Velit officia consequat duis enim velit mollit.
+                <br />
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<div className="b3">
-    <Image src={"/man.png"} alt="Foriener" width={235.59} height={164.5}/>        
-    <div className="text-container">
-        <h4>Steve Martin drops mysterious clue on Martin Short, Meryl Steep's romance</h4>
-        <button>Read More</button>
-    </div>
-</div>
-
-       
-</div>
-</div>
-    </div>
-    
+      <footer>
+        <div className="social-links">
+          <a href="#">
+            <Image
+              src="/icon-facebook.png"
+              alt="Facebook"
+              width={30}
+              height={30}
+            />
+          </a>
+          <a href="#">
+            <Image
+              src="/icon-twitter.png"
+              alt="Twitter"
+              width={30}
+              height={30}
+            />
+          </a>
+          <a href="#">
+            <Image
+              src="/icon-instagram.png"
+              alt="Instagram"
+              width={30}
+              height={30}
+            />
+          </a>
+          <a href="#">
+            <Image
+              src="/icon-linkdein.png"
+              alt="Lindein"
+              width={30}
+              height={30}
+            />
+          </a>
+        </div>
+        <p>Copyright © 2023 All rights reserved</p>
+      </footer>
+    </>
   );
 }
-
